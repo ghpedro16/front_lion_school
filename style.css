@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.cabecalho{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3347b0;
+    padding: 0 90px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sair{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo h1{
+    max-width: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.sair h1{
+    color: white;
+    font-size: 2rem;
+}
+
+main{
+   height: 75vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 90px;
+}
+
+.dispositivos{
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    font-size: 2rem;
+}
+
+.dispositivos h2, span{
+    font-weight: normal;
+}
+
+.dispositivos .curso{
+    color: #3347b0;
+}
+
+.estudante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.63;
+}
+
+.cursos{
+    display: flex;
+    flex-direction: column;
+    padding: 0 90px;
+    gap: 50px;
+}
+
+.cursos button{
+    width: 400px;
+    height: 200px;
+    background-color: #3347b0;
+    box-shadow: 10px 10px 4px rgb(151, 151, 151);
+    transition: 0.5s;
+}
+
+.cursos button:hover{
+    transform: scale(1.07);
+}
+
+.cursos span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.rodape{
+    display: flex;
+    height: 140px;
+    background-color: #3347b0;
+    justify-content: space-between;
+    padding: 0 90px;
+    align-items: center;
+}
+
+.list-contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list-contatos li{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: white;
+}
+
+.copyright{
+    color: white;
+}
+
+.midias-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}

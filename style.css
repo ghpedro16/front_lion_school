@@ -56,7 +56,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    align-items: flex-start;
+    align-items: center;
     font-size: 2rem;
 }
 
@@ -78,7 +78,7 @@ main{
 .cursos{
     display: flex;
     flex-direction: column;
-    padding: 0 90px;
+    padding: 90 0px;
     gap: 50px;
 }
 
@@ -92,6 +92,7 @@ main{
 
 .cursos button:hover{
     transform: scale(1.07);
+    cursor: pointer;
 }
 
 .cursos span{

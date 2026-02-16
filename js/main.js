@@ -10,6 +10,10 @@ import{
 const main = document.querySelector('main')
 const container = document.getElementById('container')
 const btnCursos = document.getElementById('cursos')
+const detalheAluno = document.getElementById('detalhe-aluno')
+const btnSair = document.getElementById('sair')
+
+
 
 async function carregarCursos() {
 
@@ -61,22 +65,20 @@ async function carregarAlunos(id_curso){
 
 async function carregarInfoAluno(id_aluno){
 
-    const aluno = getAlunosById(id_aluno)
+    main.classList.remove('alunos')
+    main.classList.add('dt-aluno')
 
-    aluno.forEach(infoAluno => {
-        const card = document.createElement('div')
-        card.classList.add('card-aluno')
-        const info = document.createElement('div')
-        info.classList.add('info-aluno')
+    const aluno = await getAlunosById(id_aluno)
 
-        card.innerHTML = `
-            <img src="${infoAluno.foto}" alt="">
-            <span>${infoAluno.nome}</span>
-        `;
+    const card = document.createElement('div')
+    card.classList.add('card-aluno')
+    const info = document.createElement('div')
+    info.classList.add('info-aluno')
 
-        info.innerHTML = `
-            
-        `;
+    card.innerHTML = `
+        <img src="${aluno.foto}" alt="">
+        <span>${aluno.nome}</span>
+    `;
 
-    })
+    detalheAluno.appendChild(card)
 }

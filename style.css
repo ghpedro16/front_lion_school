@@ -26,10 +26,12 @@ ul, li{
     gap: 12px;
 }
 
-.sair{
+.btn-sair{
     display: flex;
     align-items: center;
     gap: 12px;
+    background-color: #3347b0;
+    transition: 0.5s;
 }
 
 .logo h1{
@@ -38,13 +40,18 @@ ul, li{
     font-size: 1.5rem;
 }
 
-.sair h1{
+.btn-sair h1{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.btn-sair:hover{
+    transform: scale(1.07);
+    cursor: pointer;
 }
 
 main{
-   height: 75vh;
+   height: 73.7vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -103,13 +110,15 @@ main{
     font-size: 2rem;
 }
 
-.home .container {
+.home .container,
+.home .detalhe-aluno {
     display: none;
 }
 
 .alunos .dispositivos,
 .alunos .estudante,
-.alunos .cursos {
+.alunos .cursos,
+.alunos .detalhe-aluno {
     display: none;
 }
 
@@ -142,6 +151,42 @@ main{
 .cards span{
     color: white;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.cards:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.dt-aluno .dispositivos,
+.dt-aluno .estudante,
+.dt-aluno .cursos
+.dt-aluno .container {
+    display: none;
+}
+
+.dt-aluno .detalhe-aluno{
+    display: flex;
+}
+
+.card-aluno{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}
+
+.card-aluno img{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px / 200px;
+}
+
+.card-aluno span{
+    color: white;
+    font-size: 2rem;
     text-align: center;
 }
 

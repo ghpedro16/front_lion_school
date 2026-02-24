@@ -11,9 +11,12 @@ const main = document.querySelector('main')
 const container = document.getElementById('container')
 const btnCursos = document.getElementById('cursos')
 const detalheAluno = document.getElementById('detalhe-aluno')
+const btnLogo = document.getElementById('logo')
 const btnSair = document.getElementById('sair')
 
-
+btnLogo.addEventListener('click', () =>{
+    
+})
 
 async function carregarCursos() {
 
@@ -46,7 +49,7 @@ async function carregarAlunos(id_curso){
     const alunos = await getAlunosByCurso(id_curso)
 
     alunos.forEach(aluno => {
-        
+
         const card = document.createElement('div')
         card.classList.add('cards')
 

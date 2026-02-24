@@ -26,6 +26,16 @@ ul, li{
     gap: 12px;
 }
 
+.btn-logo{
+    background-color: #3347b0;
+    transition: 0.5s;
+}
+
+.btn-logo:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
 .btn-sair{
     display: flex;
     align-items: center;
@@ -128,7 +138,8 @@ main{
 }
 
 .container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(5, 200px);
     gap: 20px;
     justify-content: center;

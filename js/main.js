@@ -15,7 +15,11 @@ const btnLogo = document.getElementById('logo')
 const btnSair = document.getElementById('sair')
 
 btnLogo.addEventListener('click', () =>{
-    
+    document.getElementById('dispositivos').style.display = 'block';
+    document.getElementById('estudante').style.display = 'block';
+    document.getElementById('cursos').style.display = 'block';
+    document.getElementById('container').style.display = 'none';
+    document.getElementById('detalhe-aluno').style.display = 'none';
 })
 
 async function carregarCursos() {
@@ -83,5 +87,19 @@ async function carregarInfoAluno(id_aluno){
         <span>${aluno.nome}</span>
     `;
 
-    detalheAluno.appendChild(card)
+    aluno.desempenho.forEach(notas => {
+
+        const barra = document.createElement('div')
+        barra.classList.add('barra-desempenho')
+
+        info.innerHTML += `
+            <span>${notas.valor}</span>
+            <span>${notas.categoria}</span>
+        `;
+
+        info.appendChild(barra)
+
+    })
+
+    detalheAluno.append(card, info)
 }
